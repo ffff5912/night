@@ -1,0 +1,11 @@
+{
+    "name": "night",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "hタグの先頭に「夜の」を追加する",
+    "content_scripts": [{
+        "matches": ["http://*.jp/*"],
+        "js": ["jquery-2.1.4.min.js", "night.js"],
+        "run_at": "document_idle"
+    }]
+}
